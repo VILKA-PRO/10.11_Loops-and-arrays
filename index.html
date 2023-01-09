@@ -20,13 +20,13 @@
           <div class="line">
             <!-- пользователь указывает нижнюю границу weight -->
             <div>min weight:</div>
-            <input class="minweight__input" />
+            <input class="minweight__input" id="minWeight" required/>
           </div>
 
           <div class="line">
             <!-- пользователь указывает верхнюю границу weight -->
             <div>max weight:</div>
-            <input class="maxweight__input" />
+            <input class="maxweight__input" id="maxWeight" required/>
           </div>
 
           <!-- TODO: при нажатии элементы массива фильтруются в пределах [minweight, maxweight] -->
@@ -75,7 +75,7 @@
       <section class="fruits__wrapper">
         <h2 class="wrapper__title">🥑 Список экзотических фруктов</h2>
         <!-- TODO: формировать список динамически (то есть закоментированный код удалить) -->
-        <ul class="fruits__list">
+        <ul class="fruits__list" id="ul">
           <!-- <li class="fruit__item fruit_violet">
             <div class="fruit__info">
               <div>index: 0</div>
